@@ -70,6 +70,9 @@ unit models.
 
 They do not avoid areas seen by other players' bases.
 
+When out of supplies, a Scout Bike will drive directly to the nearest refill
+point, ignoring any enemy units.
+
 ### Supply Truck
 
 To refill a unit, a Supply Truck has to be within 10km of the receiving unit.
