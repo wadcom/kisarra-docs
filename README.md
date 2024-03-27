@@ -71,9 +71,9 @@ refill "automatically" when unloading Betirium.
 When harvesting, a Harvester will extract 5% of the Betirium content of the
 cell over the course of 1 hour.
 
-When a Harvester arrives to the base for whatever reason, it will first unload
-Betirium and then attempt to refill itself with supplies (even if it still has
-some in the tank).
+When a Harvester arrives to the base for unloading or to refill supplies, it
+will first unload Betirium and then attempt to refill itself with supplies
+(even if it still has some in the tank).
 
 ### Scout Bike
 
