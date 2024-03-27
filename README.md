@@ -51,7 +51,7 @@ refill "automatically" when unloading Betirium.
 
 ## Units
 
-### Harvesters
+### Harvester
 
 When harvesting, a Harvester will extract 5% of the Betirium content of the
 cell over the course of 1 hour.
@@ -63,3 +63,16 @@ about other units' sight ranges for that, not exact values of actual enemies'
 unit models.
 
 They do not avoid areas seen by other players' bases.
+
+## Engineering
+
+Within a turn, Engineering can brainstorm, build a unit or undertake a
+research/design ("R&D") project.
+
+Brainstorming leads to "discovering" a project, so that the player can
+undertake it.
+
+A research project unlocks other R&D projects to be discovered by the player.
+
+Completing a design project results in a new unit model, and a new, prototype
+unit of that model.
