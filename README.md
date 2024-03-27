@@ -38,7 +38,7 @@ have the actual density between 54 (= 60 * 0.9) and 66 (= 60 * 1.1).
 ## Supplies
 
 Each turn, the player receives 2 units of supplies for free, and a certain
-amount of supplies for the Beririum sent on the previous turn. For every 2 kg
+amount of supplies for the Betirium sent on the previous turn. For every 2 kg
 of beririum sent, the player will receive 1 unit of supplies.
 
 Each unit has a "tank" for supplies of a certain capacity. Each unit consumes
