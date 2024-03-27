@@ -14,13 +14,26 @@ The size of the map depends on the number of players:
  * 5 players: 33x33
  * 6 players: 36x36
 
- The length of a cell side is 20km.
+The length of a cell side is 20km.
+
+There is a Betirium source near each player's base, in the distance between 150
+to 187.5kms.
 
 ### Betirium Density
 
-The density of a Betirium spot depends on how far it is from the center of the
-map. The expected density decreases linearly from 60 at the center of the map
-to 40 at the edge.
+There is a number of Betirium areas on the map; this number is the same as the
+number of players.
+
+Betirium density within an area decreases exponentially from the area center
+(the "source") outwards.
+
+The density of Betirium at the center of an area depends on how far it is from
+the center of the map. The expected density decreases linearly from 60 at the
+center of the map to 40 at the edge.
+
+The actual density of a Betirium source varies randomly from 0.9 to 1.1 of the
+expected density. For example, the source at the very center of the map will
+have the actual density between 54 (= 60 * 0.9) and 66 (= 60 * 1.1).
 
 ## Supplies
 
