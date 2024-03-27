@@ -14,6 +14,12 @@ The size of the map depends on the number of players:
  * 5 players: 33x33
  * 6 players: 36x36
 
+### Betirium Density
+
+The density of Betirium spot depends on how far it is from the center of the
+map. The expected density decreases linearly from 60 at the center of the map
+to 40 at the edge.
+
 ## Supplies
 
 Each turn, the player receives 2 units of supplies for free, and a certain
