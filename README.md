@@ -82,10 +82,21 @@ To refill a unit, a Supply Truck has to be within 10km of the receiving unit.
 Within a turn, Engineering can brainstorm, build a unit or undertake a
 research/design ("R&D") project.
 
-Brainstorming leads to "discovering" a project, so that the player can
+Brainstorming may lead to "discovering" a project, so that the player can
 undertake it.
 
 A research project unlocks other R&D projects to be discovered by the player.
 
 Completing a design project results in a new unit model, and a new, prototype
 unit of that model.
+
+### Brainstorming
+
+Brainstorming has a certain chance of sucess, which is known beforehand.
+
+If the player has completed any R&D project since the last successful
+brainstorming, the chance of discovering a new project during the brainstorm is
+75%, otherwise it is 30%.
+
+Within the first 5 turns of the game those chances are 100% and 42%
+respectively.
