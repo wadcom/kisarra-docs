@@ -16,7 +16,7 @@ The size of the map depends on the number of players:
 
 ### Betirium Density
 
-The density of Betirium spot depends on how far it is from the center of the
+The density of a Betirium spot depends on how far it is from the center of the
 map. The expected density decreases linearly from 60 at the center of the map
 to 40 at the edge.
 
@@ -50,6 +50,11 @@ not refill at all (waiting for supplies to appear at the base). Harvesters
 refill "automatically" when unloading Betirium.
 
 ## Units
+
+### Harvesters
+
+When harvesting, a Harvester will extract 5% of the Betirium content of the
+cell over the course of 1 hour.
 
 ### Scout Bike
 
