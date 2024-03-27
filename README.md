@@ -42,3 +42,13 @@ executing its previous order.
 While refilling at the base, if a unit cannot refill to a full tank, it will
 not refill at all (waiting for supplies to appear at the base). Harvesters
 refill "automatically" when unloading Betirium.
+
+## Units
+
+### Scout Bike
+
+Scout Bikes strive not to be seen by other units. They use public information
+about other units' sight ranges for that, not exact values of actual enemies'
+unit models.
+
+They do not avoid areas seen by other players' bases.
