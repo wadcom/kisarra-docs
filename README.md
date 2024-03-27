@@ -88,6 +88,9 @@ point, ignoring any enemy units.
 
 ### Supply Truck
 
+Supply Tracks support zones by refilling all units within the zone. Supply
+Trucks do not refill other Supply Trucks.
+
 To refill a unit, a Supply Truck has to be within 10km of the receiving unit.
 
 ## Engineering
