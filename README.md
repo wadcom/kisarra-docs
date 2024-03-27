@@ -14,6 +14,8 @@ The size of the map depends on the number of players:
  * 5 players: 33x33
  * 6 players: 36x36
 
+ The length of a cell side is 20km.
+
 ### Betirium Density
 
 The density of a Betirium spot depends on how far it is from the center of the
@@ -67,6 +69,10 @@ about other units' sight ranges for that, not exact values of actual enemies'
 unit models.
 
 They do not avoid areas seen by other players' bases.
+
+### Supply Truck
+
+To refill a unit, a Supply Truck has to be within 10km of the receiving unit.
 
 ## Engineering
 
