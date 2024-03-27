@@ -26,8 +26,8 @@ Each turn, the player receives 2 units of supplies for free, and a certain
 amount of supplies for the Beririum sent on the previous turn. For every 2 kg
 of beririum sent, the player will receive 1 unit of supplies.
 
-Each unit has a "tank" (capacity) for supplies. Each unit consumes 1 unit of
-supplies at the end of each turn.
+Each unit has a "tank" for supplies of a certain capacity. Each unit consumes
+1 unit of supplies at the end of each turn.
 
 Supply Trucks can "support" zones. A truck will pick up supplies from the base
 and travel to the zone to refill units located there.
@@ -55,6 +55,10 @@ refill "automatically" when unloading Betirium.
 
 When harvesting, a Harvester will extract 5% of the Betirium content of the
 cell over the course of 1 hour.
+
+When a Harvester arrives to the base for whatever reason, it will first unload
+Betirium and then attempt to refill itself with supplies (even if it still has
+some in the tank).
 
 ### Scout Bike
 
