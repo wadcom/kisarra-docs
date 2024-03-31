@@ -103,8 +103,24 @@ undertake it.
 
 A research project unlocks other R&D projects to be discovered by the player.
 
-Completing a design project results in a new unit model, and a new, prototype
-unit of that model.
+### Design Projects
+
+Designing a new unit introduces a new model for production, with some
+parameters predefined (e.g., Betirium tank capacity) and others slightly
+variable (e.g., speed, health points).
+
+The player receives a prototype unit immediately after design, with randomly
+chosen parameters inferior to regular units. Regular units, with better
+parameters, can be built from the next turn onwards.
+
+For example, a newly designed harvester might have a fixed Betirium capacity of
+30, with variable speed ranging from 25 to 35. The prototype harvester provided
+for free may have a speed of 22, while regularly produced harvesters will have
+a higher speed, like 33.
+
+Note that 'variable speed' means the speed for the model is randomly chosen
+from the specified range. All units of the same model will have this speed; it
+won't vary among produced units.
 
 ### Brainstorming
 
