@@ -106,21 +106,32 @@ A research project unlocks other R&D projects to be discovered by the player.
 ### Design Projects
 
 Designing a new unit introduces a new model for production, with some
-parameters predefined (e.g., Betirium tank capacity) and others slightly
-variable (e.g., speed, health points).
+parameters predefined (e.g., Betirium tank capacity) and others subject to
+slight variability (e.g., speed, health points).
+
+Note that these variable parameters are randomly chosen for the model and will
+remain consistent across all units of the same model; they won't differ among
+produced units.
 
 The player receives a prototype unit immediately after design, with randomly
-chosen parameters inferior to regular units. Regular units, with better
-parameters, can be built from the next turn onwards.
+chosen parameters that are generally inferior to those of regular units.
+Regular units, with superior parameters, become available for production from
+the next turn onwards.
 
-For example, a newly designed harvester might have a fixed Betirium capacity of
-30, with variable speed ranging from 25 to 35. The prototype harvester provided
-for free may have a speed of 22, while regularly produced harvesters will have
-a higher speed, like 33.
+When designing a new model, parameters for 'regular' units are established
+first. Then, for the prototype, each parameter's value is randomly adjusted to
+be between 70% and 100% of the value for the regular model.
 
-Note that 'variable speed' means the speed for the model is randomly chosen
-from the specified range. All units of the same model will have this speed; it
-won't vary among produced units.
+#### Example
+
+Consider a newly designed harvester with a variable speed ranging from 25
+to 35.
+
+If 33 is selected as the speed for the regular model (within the range of 25
+to 35), and the random adjustment factor is 75%, the resulting speed for the
+prototype would be 24 (rounded down).
+
+Regularly produced harvesters will maintain the chosen speed of 33.
 
 ### Brainstorming
 
