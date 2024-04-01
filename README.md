@@ -66,6 +66,19 @@ refill "automatically" when unloading Betirium.
 
 ## Units
 
+### Cannon
+
+When guarding, the Cannon selects targets based on estimated time to eliminate,
+factoring in remaining health of the potential target. It attacks enemies
+within its firing range, even if they are visible to other units, not the
+Cannon itself.
+
+During attacks, the Cannon aims before firing. Target movement during aiming
+reduces shot accuracy; stationary targets maintain full accuracy, while moving
+targets result in 50% accuracy.
+
+The Cannon can only attack enemies that are at least 5 kilometers away from it.
+
 ### Harvester
 
 When harvesting, a Harvester will extract 5% of the Betirium content of the
