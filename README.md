@@ -95,9 +95,9 @@ zone.
 
 If no enemies are present, it moves randomly within the zone.
 
-If enemies are detected, it prioritizes the closest target based on estimated
-time to eliminate, factoring in travel time and the enemy's remaining health.
-It engages when within a 5km combat radius.
+If enemies are detected, it prioritizes targets based on estimated time to
+eliminate, factoring in travel time and the enemy's remaining health. It
+engages when within a 5km combat radius.
 
 ### Scout Bike
 
