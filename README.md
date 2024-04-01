@@ -93,6 +93,10 @@ The Cannon can only attack enemies that are at least 5 kilometers away from it.
 When harvesting, a Harvester will extract 5% of the Betirium content of the
 cell over the course of 1 hour.
 
+When selecting a cell to harvest at, the Harvester considers the time it takes
+to fill its tank at that location, along with the time needed to return to the
+base while staying within the harvesting area.
+
 When a Harvester arrives to the base for unloading or to refill supplies, it
 will first unload Betirium and then attempt to refill itself with supplies
 (even if it still has some in the tank).
