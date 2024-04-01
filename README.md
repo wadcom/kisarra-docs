@@ -63,7 +63,17 @@ While refilling at the base, if a unit cannot refill to a full tank, it will
 not refill at all (waiting for supplies to appear at the base). Harvesters
 refill "automatically" when unloading Betirium.
 
-## Units
+## Unit Damage
+
+Damage affects the unit's movement speed, leaving other functions unchanged.
+
+Health >75%: no change.
+
+Health between 75% and 25%: speed decreases linearly from 100% to 50%.
+
+Health <25%: speed reduced to 50%.
+
+## Unit Types
 
 ### Cannon
 
