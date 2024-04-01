@@ -48,8 +48,7 @@ Supply Trucks can "support" zones. A truck will pick up supplies from the base
 and travel to the zone to refill units located there.
 
 When a unit runs out of supplies, its behavior depends on whether it is in a
-supported zone. If trucks are assigned to support the zone but none of them
-have supplies, the zone is considered unsupported.
+supported zone.
 
 If a unit without supplies is inside a supported zone, it will remain there and
 be inactive until refilled.
