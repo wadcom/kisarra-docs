@@ -75,6 +75,17 @@ When a Harvester arrives to the base for unloading or to refill supplies, it
 will first unload Betirium and then attempt to refill itself with supplies
 (even if it still has some in the tank).
 
+### Patrol Buggy
+
+When assigned to patrol, the Patrol Buggy checks for visible enemies within the
+zone.
+
+If no enemies are present, it moves randomly within the zone.
+
+If enemies are detected, it prioritizes the closest target based on estimated
+time to eliminate, factoring in travel time and the enemy's remaining health.
+It engages when within a 5km combat radius.
+
 ### Scout Bike
 
 Scout Bikes strive not to be seen by other units. They use public information
@@ -88,7 +99,7 @@ point, ignoring any enemy units.
 
 ### Supply Truck
 
-Supply Tracks support zones by refilling all units within the zone. Supply
+Supply Trucks support zones by refilling all units within the zone. Supply
 Trucks do not refill other Supply Trucks.
 
 To refill a unit, a Supply Truck has to be within 10km of the receiving unit.
