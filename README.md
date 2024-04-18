@@ -180,3 +180,18 @@ brainstorming, the chance of discovering a new project during the brainstorm is
 
 Within the first 5 turns of the game those chances are 100% and 42%
 respectively.
+
+### Research tree
+```mermaid
+graph TD;
+    ballistics-1;
+    ballistics-1-->Cannon;
+    Cannon-->Long-Range-Cannon;
+    engine-1;
+    Harvester;
+    engine-1-->High-Speed-Harvester;
+    engine-1-->Extra-Capacity-Harvester;
+    Patrol-Buggy;
+    Scout-Bike;
+    Supply-Truck;
+```
