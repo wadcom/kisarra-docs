@@ -185,13 +185,13 @@ respectively.
 ```mermaid
 graph TD;
     ballistics-1(Ballistics 1);
-    ballistics-1-->Cannon;
-    Cannon-->Long-Range-Cannon(Long Range Cannon);
+    ballistics-1-->cannon(Cannon);
+    cannon-->long-range-cannon(Long Range Cannon);
     engine-1(Engine 1);
-    Harvester;
-    engine-1-->High-Speed-Harvester(High Speed Harvester);
-    engine-1-->Extra-Capacity-Harvester(Extra Capacity Harvester);
-    Patrol-Buggy;
-    Scout-Bike;
-    Supply-Truck;
+    harvester(Harvester);
+    engine-1-->high-speed-harvester(High Speed Harvester);
+    engine-1-->extra-capacity-harvester(Extra Capacity Harvester);
+    patrol-buggy(Patrol Buggy);
+    scout-bike(Scout Bike);
+    supply-truck(Supply Truck);
 ```
