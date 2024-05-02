@@ -184,14 +184,14 @@ respectively.
 ### Research tree
 ```mermaid
 graph TD;
-    ballistics-1(Ballistics 1);
+    harvester(Harvester\nALWAYS BRAINSTORMED);
+    harvester-->ballistics-1(Ballistics 1);
     ballistics-1-->cannon(Cannon);
     cannon-->long-range-cannon(Long Range Cannon);
-    engine-1(Engine 1);
-    harvester(Harvester);
+    harvester-->engine-1(Engine 1);
     engine-1-->high-speed-harvester(High Speed Harvester);
     engine-1-->extra-capacity-harvester(Extra Capacity Harvester);
-    patrol-buggy(Patrol Buggy);
-    scout-bike(Scout Bike);
-    supply-truck(Supply Truck);
+    harvester-->patrol-buggy(Patrol Buggy);
+    harvester-->scout-bike(Scout Bike);
+    harvester-->supply-truck(Supply Truck);
 ```
