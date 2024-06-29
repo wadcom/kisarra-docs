@@ -5,15 +5,15 @@ A map is defined in a JSON file which could look like this:
 
 ```
 {
-    size: 4,
-    playersQuantity: 2,
-    betirium: [
+    "size": 4,
+    "playersQuantity": 2,
+    "betirium": [
         1, 2, 3, 4,
         5, 6, 7, 8,
         7, 6, 6, 5,
         4, 3, 2, 1
     ],
-    basePositions: [{x: 2, y: 0}, {x: 3, y: 3}]
+    "basePositions": [{"x": 2, "y": 0}, {"x": 3, "y": 3}]
 }
 ```
 
