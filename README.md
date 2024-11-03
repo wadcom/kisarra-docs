@@ -48,7 +48,7 @@ After refilling, the unit resumes executing its previous order.
 ### Depots
 
 In addition to the base, players can construct Depots to manage supplies more
-efficiently.
+efficiently. Depots are created by deploying Depot Carriers.
 
 Depots act as additional supply sources: units can refuel supplies at Depots
 just like at the base.
@@ -86,6 +86,23 @@ reduces shot accuracy; stationary targets maintain full accuracy, while moving
 targets result in 50% accuracy.
 
 The Cannon can only attack enemies that are at least 5 kms away from it.
+
+### Depot Carrier
+
+After creation, the Depot Carrier unit is in Park mode: it does not consume
+supplies and has a sight range of 5.1 km.
+
+The Depot Carrier has the following commands:
+
+- **Deploy:**
+  - The unit moves to the specified point, and upon arrival, transforms into a
+  Depot, which has capacity only for supplies.
+- **Move & Park:**
+  - Moves to the specified location and switches to Park mode upon arrival.
+
+Depot Carrier and Depot have different health point amounts and different
+supply capacities. Upon deployment, the Depot receives the same percentage of
+health as the Depot Carrier had. It also retains the same amount of supplies.
 
 ### Harvester
 
