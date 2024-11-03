@@ -2,12 +2,23 @@
 
 ## The Goal
 
-The goal of the game is to ship Betirium. The player who has shipped the most
-Betirium by the end of the game wins.
+The goal of the game is to collect as much Betirium as possible. The player who
+has collected the highest total amount of Betirium by the end of the game wins.
+
+**Total Collected Betirium Includes:**
+- **Shipped Betirium**
+- **Betirium stored at the base**
+- **Betirium currently carried by the player's units**
 
 ## Map Configuration
 
 The length of a cell side is 20km.
+
+### Terrain Types
+
+The map features two terrain types: sand fields and mountains.
+
+Units cannot traverse mountain cells; they must navigate around them.
 
 ### Betirium Density
 
@@ -21,7 +32,7 @@ Betirium density within an area decreases exponentially from the area center
 
 Each turn, the player receives 20 units of supplies for free, and a certain
 amount of supplies for the Betirium sent on the previous turn. For every kg of
-beririum sent, the player will receive 5 units of supplies.
+Betirium sent, the player will receive 5 units of supplies.
 
 Each unit has a "tank" for supplies of a certain capacity. Each unit consumes
 1 unit of supplies at the end of each hour.
@@ -32,12 +43,24 @@ and travel to the zone to refill units located there.
 When a unit runs out of supplies, its sight range gets decreased to 5.1 km and
 the unit becomes inactive until refilled.
 
-After refilling (at the base or with the help of a truck), the unit resumes
-executing its previous order.
+After refilling, the unit resumes executing its previous order.
 
-While refilling at the base, if a unit cannot refill to a full tank, it will
-not refill at all (waiting for supplies to appear at the base). Harvesters
-refill "automatically" when unloading Betirium.
+### Depots
+
+In addition to the base, players can construct Depots to manage supplies more
+efficiently.
+
+Depots act as additional supply sources: units can refuel supplies at Depots
+just like at the base.
+
+### Refilling At Supply Sources
+
+While refilling at a supply source, if a unit cannot refill to a full tank, it
+will not refill at all (waiting for supplies to appear at the base).
+
+Harvesters refill "automatically" when unloading Betirium at the base.
+
+Supply Trucks with active orders will refill as much as they can.
 
 ## Unit Damage
 
@@ -77,10 +100,9 @@ When a Harvester arrives to the base for unloading or to refill supplies, it
 will first unload Betirium and then attempt to refill itself with supplies
 (even if it still has some in the tank).
 
-If a Harvester is not within a supported zone, or if all Supply Trucks
-supporting the zone are out of supplies (or heading to refill themselves), the
-Havester will head back to base to refill its supplies as soon as their amount
-drops to the level required to travel back.
+Harvesters have an option called **"Refill on Low Supplies"**. When enabled,
+the Harvester will automatically return to the nearest supply source (base or
+Depot) to refill supplies when they drop close to zero.
 
 ### Patrol Buggy
 
@@ -104,10 +126,21 @@ They do not avoid areas seen by other players' bases.
 
 ### Supply Truck
 
+Supply Trucks can perform the following commands:
+
+- **Support:**
+  - Refill all units within a designated zone.
+- **Move:**
+  - Direct the Supply Truck to a specific location without engaging in
+  refueling activities.
+- **Shuttle:**
+  - Set up a continuous route between two points (e.g., base and Depot) to
+  transport supplies automatically.
+
 Supply Trucks support zones by refilling all units within the zone. If a Supply
 Truck is stuck without supplies within a supported zone, other Supply Trucks
 will refill it up to the amount required for the recipient Supply Truck to
-return to base and refill itself.
+return to the nearest supply source and refill itself.
 
 To refill a unit, a Supply Truck has to be within 10km of the receiving unit.
 
