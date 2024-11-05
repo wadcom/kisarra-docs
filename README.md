@@ -225,4 +225,5 @@ graph TD;
     harvester-->patrol-buggy(Patrol Buggy);
     harvester-->scout-bike(Scout Bike);
     harvester-->supply-truck(Supply Truck);
+    supply-truck-->depot-carrier(Depot Carrier);
 ```
