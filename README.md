@@ -22,8 +22,7 @@ Units cannot traverse mountain cells; they must navigate around them.
 
 ### Betirium Density
 
-There is a number of Betirium areas on the map; this number is the same as the
-number of players.
+There is a number of Betirium areas on the map.
 
 Betirium density within an area decreases exponentially from the area center
 (the "source") outwards.
