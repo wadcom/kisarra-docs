@@ -25,7 +25,7 @@ Units cannot traverse mountain cells; they must navigate around them.
 There is a number of Betirium areas on the map.
 
 Betirium density within an area decreases exponentially from the area center
-(the "source") outwards.
+outwards.
 
 ## Supplies
 
@@ -35,9 +35,6 @@ Betirium sent, the player will receive 5 units of supplies.
 
 Each unit has a "tank" for supplies of a certain capacity. Each unit consumes
 1 unit of supplies at the end of each hour.
-
-Supply Trucks can "support" zones. A truck will pick up supplies from the base
-and travel to the zone to refill units located there.
 
 When a unit runs out of supplies, its sight range gets decreased to 5.1 km and
 the unit becomes inactive until refilled.
@@ -55,7 +52,7 @@ just like at the base.
 ### Refilling At Supply Sources
 
 While refilling at a supply source, if a unit cannot refill to a full tank, it
-will not refill at all (waiting for supplies to appear at the base).
+will not refill at all (waiting for supplies to appear at the source).
 
 Harvesters refill "automatically" when unloading Betirium at the base.
 
@@ -153,10 +150,13 @@ Supply Trucks can perform the following commands:
   - Set up a continuous route between two points (e.g., base and Depot) to
   transport supplies automatically.
 
-Supply Trucks support zones by refilling all units within the zone. If a Supply
-Truck is stuck without supplies within a supported zone, other Supply Trucks
-will refill it up to the amount required for the recipient Supply Truck to
-return to the nearest supply source and refill itself.
+Supply Trucks support zones by refilling all units within the zone. A truck
+will pick up supplies from the nearest supply source and travel to the zone to
+refill units located there.
+
+If a Supply Truck is stuck without supplies within a supported zone, other
+Supply Trucks will refill it up to the amount required for the recipient Supply
+Truck to return to the nearest supply source and refill itself.
 
 To refill a unit, a Supply Truck has to be within 10km of the receiving unit.
 
