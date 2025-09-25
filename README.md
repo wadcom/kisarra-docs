@@ -32,15 +32,26 @@ Kisarra uses a **turn-based system with autonomous unit execution**:
 - **Patrol Buggy** ordered to "Patrol Area" will choose patrol paths, select targets, and adapt to enemy movements
 - **Harvester** given extraction orders will pick harvest locations, respond to resource depletion, and decide when to return to base
 
-## The Goal
+## Victory Conditions
 
-The goal of the game is to collect as much Betirium as possible. The player who
-has collected the highest total amount of Betirium by the end of the game wins.
+Kisarra uses a dual-factor scoring system where players must excel in both resource collection and combat:
 
-**Total Collected Betirium Includes:**
-- **Shipped Betirium**
-- **Betirium stored at the base**
-- **Betirium currently carried by the player's units**
+**Your Score = MIN(Total Betirium Collected, Combat Frags)**
+
+The player with the highest score wins.
+
+**Combat Frags:**
+- Points earned by damaging enemy units
+- Calculated as: (Unit Production Cost × Health Damage %) × 0.5
+- Examples:
+  - Destroying a unit that cost 100 Betirium to produce (100% damage): 100 × 1.0 × 0.5 = 50 frags
+  - Damaging a unit that cost 100 Betirium to produce by 30%: 100 × 0.3 × 0.5 = 15 frags
+
+This scoring system requires players to balance economic development with military engagement - a purely economic or purely military strategy will be limited by whichever score is lower.
+
+### Game Duration
+
+Games last a fixed number of turns determined by the game configuration, typically ranging from 35 to 75 turns depending on the specific game setup.
 
 ## Map Configuration
 
