@@ -1,5 +1,37 @@
 # Kisarra Rules And Documentation
 
+## Turn Structure and Unit Autonomy
+
+Kisarra uses a **turn-based system with autonomous unit execution**:
+
+### How Turns Work
+
+- **Players issue orders once per turn** at the beginning of each 10-hour turn
+- **Units execute orders autonomously** throughout the entire turn
+- **Units continuously make decisions** about what specific actions to take based on:
+  - Their assigned orders from the player
+  - Current battlefield conditions
+  - Available resources and opportunities
+  - Enemy positions and threats
+
+### Strategic vs Tactical Decisions
+
+**Player Orders (Strategic)**:
+- Given once at turn start and cannot be changed during execution
+- High-level directives such as "Support this zone" or "Patrol this area"
+- Focus on overall objectives and resource allocation
+
+**Unit Decisions (Tactical)**:
+- Made continuously throughout the turn by each unit
+- Specific actions to fulfill orders (which route to take, which target to engage)
+- Adaptive responses to changing battlefield situations
+
+### Examples of Unit Autonomy
+
+- **Supply Truck** ordered to "Support Zone" will decide which units to refill, what routes to take, and when to resupply
+- **Patrol Buggy** ordered to "Patrol Area" will choose patrol paths, select targets, and adapt to enemy movements
+- **Harvester** given extraction orders will pick harvest locations, respond to resource depletion, and decide when to return to base
+
 ## The Goal
 
 The goal of the game is to collect as much Betirium as possible. The player who
