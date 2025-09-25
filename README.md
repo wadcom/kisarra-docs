@@ -72,15 +72,11 @@ outwards.
 
 ## Supplies
 
-Each turn, the player receives 20 units of supplies for free, and a certain
-amount of supplies for the Betirium sent on the previous turn. For every kg of
-Betirium sent, the player will receive 5 units of supplies.
+Supplies are created automatically when units refill at supply sources by converting Betirium at a rate of **1 kg Betirium = 10 supplies**.
 
-Each unit has a "tank" for supplies of a certain capacity. Each unit consumes
-1 unit of supplies at the end of each hour.
+Each unit has a supply tank with a specific capacity. Active units consume 1 unit of supplies per hour, while idle units consume no supplies (except Scout Bikes, which consume supplies even when idle).
 
-When a unit runs out of supplies, its sight range gets decreased to 5.1 km and
-the unit becomes inactive until refilled.
+When a unit runs out of supplies, its sight range decreases to 5.1 km and the unit becomes inactive until refilled.
 
 After refilling, the unit resumes executing its previous order.
 
@@ -94,12 +90,14 @@ just like at the base.
 
 ### Refilling At Supply Sources
 
-While refilling at a supply source, if a unit cannot refill to a full tank, it
-will not refill at all (waiting for supplies to appear at the source).
+**Automatic Conversion Process:**
+When a unit refills at the base, the required supplies are automatically created by converting your stored Betirium. For example, if a unit needs 100 supplies to refill, 10 kg of Betirium is automatically converted and deducted from your total.
 
-Harvesters refill "automatically" when unloading Betirium at the base.
-
-Supply Trucks with active orders will refill as much as they can.
+**Refilling Rules:**
+- Most units only refill if they can reach full capacity (all-or-nothing rule)
+- Exception: Supply Trucks with active orders refill as much as possible
+- Units must be within 10 km of a supply source to refill
+- Harvesters automatically refill when unloading Betirium at the base
 
 ## Unit Damage
 
