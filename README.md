@@ -120,14 +120,14 @@ visible to other units, not the Cannon itself.
 
 During attacks, the Cannon aims before firing. Target movement during aiming
 reduces shot accuracy; stationary targets maintain full accuracy, while moving
-targets result in 50% accuracy.
+targets suffer reduced accuracy.
 
-The Cannon can only attack enemies that are at least 5 kms away from it.
+The Cannon cannot engage enemies that are too close to it.
 
 ### Depot Carrier
 
 After creation, the Depot Carrier unit is in Park mode: it does not consume
-supplies and has a sight range of 5.1 km.
+supplies and has reduced sight range.
 
 The Depot Carrier has the following commands:
 
@@ -143,8 +143,8 @@ health as the Depot Carrier had. It also retains the same amount of supplies.
 
 ### Harvester
 
-When harvesting, a Harvester will extract 5% of the Betirium content of the
-cell over the course of 1 hour.
+When harvesting, a Harvester will gradually extract Betirium from the cell
+over time.
 
 When selecting a cell to harvest at, the Harvester considers the time it takes
 to fill its tank at that location, along with the time needed to return to the
@@ -168,7 +168,7 @@ If no enemies are present, it moves randomly within the zone.
 If enemies are detected, the Patrol Buggy prioritizes attacking military units
 first, based on the estimated time to eliminate, factoring in travel time and
 the enemy's remaining health. If no military units are present, it will still
-attack other units. It engages when within a 5km combat radius.
+attack other units. It engages when within combat range.
 
 ### Scout Bike
 
@@ -199,7 +199,40 @@ If a Supply Truck is stuck without supplies within a supported zone, other
 Supply Trucks will refill it up to the amount required for the recipient Supply
 Truck to return to the nearest supply source and refill itself.
 
-To refill a unit, a Supply Truck has to be within 10km of the receiving unit.
+To refill a unit, a Supply Truck has to be within close range of the receiving unit.
+
+### Tank
+
+Tanks are heavy combat units designed for defensive positioning and area control with rotating turrets.
+
+**Overwatch Operations:**
+When given overwatch orders, a Tank positions itself at a designated watch-point and monitors a specified zone for enemies. It uses allied vision to detect threats within the watch-zone only, ignoring enemies outside the designated area.
+
+**Combat Behavior:**
+Upon detecting an enemy in its watch-zone, the Tank approaches until within firing range, then stops and rotates both its body and turret to track the target. It uses an aiming system that tracks target movement patterns, achieving higher accuracy against stationary targets compared to moving ones.
+
+**Key Characteristics:**
+- Must stop moving to fire (cannot shoot while moving)
+- Requires line-of-sight (mountains block shots)
+- Cannot engage targets closer than minimum firing range
+- Most durable unit with highest health pool for sustained frontline combat
+- Zone-constrained operations focus firepower on specific battlefield areas
+
+### Freight Truck
+
+Freight Trucks provide high-capacity supply transport for bulk logistics operations.
+
+**Shuttle Operations:**
+Freight Trucks execute continuous round-trip transport between two specified points using a four-phase cycle: Loading → Delivering → Unloading → Returning. This cycle repeats automatically until cancelled.
+
+**Smart Supply Management:**
+The Freight Truck intelligently reserves enough supplies for its return journey while delivering the remainder to the destination, ensuring it can always complete its round-trip cycle.
+
+**Key Characteristics:**
+- Highest supply capacity among all logistics units
+- Operates as a "supply conveyor belt" with simple, reliable point-to-point transport
+- Cannot perform flexible zone operations like Supply Trucks
+- Complements Supply Trucks by handling fixed routes while Supply Trucks handle dynamic zone support
 
 ## Engineering
 
