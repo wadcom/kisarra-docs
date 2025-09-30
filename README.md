@@ -109,6 +109,26 @@ Health between 75% and 25%: speed decreases linearly from 100% to 50%.
 
 Health <25%: speed reduced to 50%.
 
+## Combat System
+
+### Target Prioritization
+
+When engaging enemies, military units are prioritized over economic units.
+
+### Combat Resolution
+
+Shots deal damage instantly when fired (no projectile travel time).
+
+## Zone System
+
+Zones are player-defined areas on the map used to organize and direct unit 
+operations. Zones can overlap.
+
+## Movement Rules
+
+Mountains are impassable. Units cannot enter cells containing enemy bases. Units 
+can enter cells containing their own base
+
 ## Unit Types
 
 ### Cannon
