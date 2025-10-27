@@ -42,10 +42,18 @@ The player with the highest score wins.
 
 **Combat Frags:**
 - Points earned by damaging enemy units
-- Calculated as: (Unit Production Cost × Health Damage %) × 0.5
+- Calculated as: (Unit Production Cost × Health Damage %) × Frag Factor
+- **Dynamic Frag Factor**: Changes throughout the game to encourage early aggression
+  - **Early-Aggression Curve** (current standard):
+    - Turn 1: 1.5× multiplier
+    - Midpoint (turn limit ÷ 2): 0.7× multiplier
+    - First half: Linear decline from 1.5× to 0.7×
+    - Second half: Constant 0.7× multiplier
+  - **Purpose**: Makes early combat more valuable, encouraging aggressive early-game play
 - Examples:
-  - Destroying a unit that cost 100 Betirium to produce (100% damage): 100 × 1.0 × 0.5 = 50 frags
-  - Damaging a unit that cost 100 Betirium to produce by 30%: 100 × 0.3 × 0.5 = 15 frags
+  - Turn 1 (factor: 1.5×): Destroying a 100 Betirium unit: 100 × 1.0 × 1.5 = 150 frags
+  - Turn 25 of 100 (factor: ~1.1×): Same damage: 100 × 1.0 × 1.1 = 110 frags
+  - Turn 50+ of 100 (factor: 0.7×): Same damage: 100 × 1.0 × 0.7 = 70 frags
 
 This scoring system requires players to balance economic development with military engagement - a purely economic or purely military strategy will be limited by whichever score is lower.
 
@@ -180,15 +188,19 @@ Depot) to refill supplies when they drop close to zero.
 
 ### Patrol Buggy
 
-When assigned to patrol, the Patrol Buggy checks for visible enemies within the
-zone.
+The Patrol Buggy is a fast combat unit with two operational modes:
 
-If no enemies are present, it moves randomly within the zone.
+**Patrol Mode:**
+When assigned to patrol, the Patrol Buggy actively patrols a designated zone. If enemies are detected within the zone (using allied vision), it prioritizes attacking military units first, based on estimated time to eliminate, factoring in travel time and remaining health. When no enemies are present, it moves randomly within the zone.
 
-If enemies are detected, the Patrol Buggy prioritizes attacking military units
-first, based on the estimated time to eliminate, factoring in travel time and
-the enemy's remaining health. If no military units are present, it will still
-attack other units. It engages when within combat range.
+**Overwatch Mode:**
+When given overwatch orders, the Patrol Buggy holds a defensive position:
+- Moves to player-specified watch-point and orients toward zone center
+- Detects enemies in watch-zone via allied vision
+- Pursues and engages targets within the watch-zone using patrol combat behavior
+- Returns to watch-point when no enemies remain in zone
+- **Supply Efficiency**: Consumes zero supplies while watching (only consumes when moving/engaging)
+- **Zone-Constrained**: Ignores enemies outside the designated watch-zone
 
 ### Scout Bike
 
