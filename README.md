@@ -67,9 +67,13 @@ The length of a cell side is 20km.
 
 ### Terrain Types
 
-The map features two terrain types: sand fields and mountains.
+The map features 3 terrain types: sand fields, mountains, and bases.
 
 Units cannot traverse mountain cells; they must navigate around them.
+
+Units cannot traverse enemy base borders; it practically means an enemy
+melee unit (e.g., Patrol Buggy) close inside the enemy base borders
+may attack yours close outside - but not vice versa.
 
 ### Betirium Density
 
