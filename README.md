@@ -210,6 +210,15 @@ unit models.
 
 They do not avoid areas seen by other players' bases.
 
+The Scout Bike has the following commands:
+
+- **Move:**
+  - Travel along an ordered route of up to 9 waypoints. The Scout Bike
+  proceeds toward each waypoint in turn without stopping; on reaching the
+  final waypoint, the order completes. The route may span multiple turns.
+- **Station:**
+  - Hold position at the specified location.
+
 ### Supply Truck
 
 Supply Trucks can perform the following commands:
