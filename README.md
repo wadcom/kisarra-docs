@@ -68,6 +68,19 @@ At the start of each turn:
 At the start of the game, you have 2 Harvesters at your base and no Betirium.
 You get your first 5 Betirium at the start of turn 1.
 
+### End Of A Turn
+
+At the end of each turn, after the last tick, new units arrive at random
+points in your base cell:
+
+1. The units you built this turn.
+2. The prototype of a design that you completed this turn.
+
+No tick of the turn contains these units. Nothing can shoot them, and they do
+not block other units. You give them orders on the next turn.
+
+A player who can see your base also sees the new units arrive.
+
 ## Winning
 
 Your score is the lower of two numbers: the Betirium you collected, and your
@@ -942,7 +955,9 @@ Each turn, engineering does two things at the same time:
 - You can build any number of units of any types in one turn.
 - You must have enough Betirium for all the units in the order. If you do not,
   the game builds none of them.
-- New units appear at random points in your base cell.
+- You pay the Betirium at the start of the turn.
+- The units arrive at the end of the turn. See
+  [End Of A Turn](#end-of-a-turn).
 
 ### Brainstorming
 
@@ -1036,8 +1051,9 @@ a different tree. Look at the settings of your game.
 
 ### Prototypes And Design Values
 
-When you complete a design, you get one free unit at once. This unit is the
-**prototype**. It appears at a random point in your base cell.
+When you complete a design, you get one free unit at the end of that turn.
+This unit is the **prototype**. It arrives at a random point in your base
+cell, like the units you build. See [End Of A Turn](#end-of-a-turn).
 
 The prototype is weaker than the design. The game calculates each of its
 values separately, as a random 70% to 100% of the design's value.
