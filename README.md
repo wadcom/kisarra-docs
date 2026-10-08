@@ -6,6 +6,8 @@ Kisarra is a turn-based strategy game. You give orders to your units once per
 turn. During the turn, the units carry out the orders without your help. To
 win, you must collect Betirium and you must damage enemy units.
 
+New to Kisarra? Read [Your First Five Turns](FIRST-GAME.md).
+
 ## Contents
 
 - [The Turn](#the-turn)
@@ -67,6 +69,10 @@ At the start of each turn:
 
 At the start of the game, you have 2 Harvesters at your base and no Betirium.
 You get your first 5 Betirium at the start of turn 1.
+
+From turn 1, you can develop the projects that the game setting
+`initial-state.researchable-projects` lists. Games usually list the Scout Bike
+and the Supply Truck.
 
 ### End Of A Turn
 
